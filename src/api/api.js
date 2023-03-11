@@ -1,8 +1,7 @@
 
 import axios from 'axios'
 
-axios.defaults.baseURL = 'http://localhost:3000/api'
-
+axios.defaults.baseURL = process.env.REACT_APP_API_PATH;
 
 export const getSongs = async () => axios.get('/songs');
 
